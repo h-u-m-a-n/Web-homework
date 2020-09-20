@@ -1,0 +1,435 @@
+body{
+    color: #656565;
+    background-color: #edeef0;
+    margin-bottom: 0;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #4a76a8;
+
+}
+header .wrap{
+    display: flex;
+    width: 960px;
+    margin: auto;
+}
+#logo a{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background-image: url(images/vk.svg);
+    background-repeat: no-repeat;
+}
+
+#search_div{
+    margin: auto 0;
+    margin-left: 150px;
+}
+
+#search_div img{
+    translate: 27px;
+}
+#search{
+    background-color: #224b7a;
+    background-image: url(images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+    border-radius: 30px;
+    border-color: #224b7a;
+
+    padding: 0 5px 0 30px;
+    height: 25px;
+
+    color:white;
+}
+
+#search:focus:placeholder-shown{
+    color:transparent;
+}
+
+#search:focus{
+    background-color: white;
+    color:black;
+}
+
+main{
+    flex: 1 0 auto;
+    display: flex;
+    width: 960px;
+    margin: 30px auto 0;
+    /* background-color: yellowgreen; */
+    padding-top: 30px;
+    
+}
+
+#left_side{
+    width: 540px;
+    margin-right: 100px;
+    color: black;
+    text-align: center;
+}
+#left_side h1{
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+#left_side p{
+    color: #626d7a;
+    width: 370px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+#phone_links{
+    margin-top: 32px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#phone_links a{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#phone_links img{
+    height: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+#iphone{
+    margin-left: -25px;
+}
+
+#phone_links span{
+    font-weight: 600;
+    padding: 7px 16px 8px;
+}
+#phone_links span:hover{
+    background-color: #d5d6d7;
+}
+#phone_links a:hover{
+    text-decoration: none;   
+}
+
+#android1::before{
+    content: "__";
+    color: transparent;
+    background-image: url(images/android.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 13px;
+}
+
+#iphone1::before{
+    content: "__";
+    color: transparent;
+    background-image: url(images/apple-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 13px;
+}
+#right_side{
+    width: 320px;
+}
+
+.forms{
+    padding: 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.forms input{
+    width: 254.4px;
+    height: 19.4px;
+    padding: 6px 12px 8px 10px;
+    border-radius: 3px;
+    border-width: 0.8px;
+    margin-bottom: 15px;
+    
+}
+
+.forms button{
+    width: 100px;
+    height: 35px;
+    padding: 7px 16px 8px;
+    margin: 5px 15px 0 0;
+    border-width: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    background-color: #5181b8;
+    cursor: pointer;
+    
+}
+.forms button:hover{
+    background-color: #84a7cd;
+}
+#birthday_hint{
+    text-align: left;
+}
+
+#hidden{
+    cursor: pointer;
+}
+
+[data-tooltip]{
+    position: relative;
+    cursor: default;
+
+}
+
+[data-tooltip]::after{
+    position: absolute;
+    width: 300px;
+    
+}
+
+
+#birthday{
+    margin-top: 5px;
+}
+
+#sex{
+    text-align: left;
+    margin: 0 0 10px 1px;
+}
+
+#sex span{
+    font-weight: 600;
+    color: #939393;
+    font-size: 13px
+}
+
+#sex div{
+    display: flex;
+    padding: auto;
+}
+#sex input{
+    width: 5px;
+    cursor: pointer;
+}
+#sex label{
+    margin-right: 30px;
+    cursor: pointer;
+    display: inline-block;
+
+    padding: 3px 0 0 0;
+}
+
+
+#submit{
+    background-color: #4bb34b;
+    width: 100%;
+}
+
+#facebook{
+    width: 100%;
+    background-color: #1b6dd1;
+    margin-top: 20px;
+}
+
+#facebook_logo{
+    background-color: white;
+    position: absolute;
+    top: 686px;
+    right: 547px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+    background-image: url(images/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+}
+#facebook_logo img{
+    
+    width: 20px;
+    height: 20px;
+}
+
+
+footer{
+    flex: 0 0 auto;
+    width: 960px;
+    margin: 30px auto 0;
+
+
+    /* background-color: aqua; */
+
+
+}
+
+footer hr{
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right,rgba(170, 170, 170, 0), rgba(170, 170, 170, 1), rgba(170, 170, 170, 0));
+}
+
+footer .wrap{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 35px;
+    margin-top: 24px;
+}
+
+footer a{
+    margin-right: 10px;
+}
+
+a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #2a5885;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: #2a5885;
+}
+
+h2{
+    color: black;
+    margin: 0;
+    font-size: 20px;
+}
+
+p{
+    margin: 5px 0 21px;
+    
+    font-size: 12.5px;
+}
+/* body{
+    background-color: #edeef0;
+}
+header{
+    background-color: #4a76a8;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+}
+header div{
+    display: flex;
+   
+    overflow: hidden;
+
+    width: 960px; 
+    height: 45px;
+    margin: 0 auto;
+    
+}
+
+header img {
+    margin-left: 15%;
+}
+header input {
+    margin-top: 0.5%;
+    margin-left: 15%;
+    width: 200px;
+    height: 50%;
+    border-radius: 25px;
+    background-image: url(images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-color: #224b7a;
+    padding: 50;
+    color: white;
+}
+
+main{
+    display: flex;
+    margin: 60px auto;
+    width: 960px;
+    padding-left: 100px;
+}
+#left{
+    display: grid;
+    width: 640px;
+    text-align: center;
+    align-items: center;
+}
+#left h2{
+    margin-bottom: 10px;
+}
+.text{
+    margin-bottom: 35px;
+    
+    padding: 0 18%;
+    text-align: center;
+    font-size: 14px;
+    color: #626d7a;
+}
+.logo a{
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    background-image: url(images/reg_android_en.png);
+}    
+
+#right{
+    width: 320px;
+}
+
+
+
+hr{
+    width: 960px;
+}
+footer{
+    width: 960px;
+    display: flex;
+    margin: 0 auto;
+    color: #6f7985;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: smaller;
+}
+
+footer div a{
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer .left{
+    position: absolute;
+    left: 0;
+}
+
+
+footer .center{
+    position: absolute;
+    right: 50%;
+}
+
+footer .right{
+    position: absolute;
+    right: 0;
+}
+
+footer a{
+    color: #2a5885;
+
+} */
