@@ -1,3 +1,9 @@
+::selection{
+    color: white;
+    background-color: black;
+}
+
+
 body{
     border: 1px solid green;
 
@@ -9,7 +15,11 @@ body{
 
 }
 
+
 header{
+    display: flex;
+    flex-direction: column;
+
     height: 666px;
     width: 100%;
     background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(images/header_background.jpeg);
@@ -17,6 +27,8 @@ header{
     background-attachment: scroll;
     background-position: center;
     background-size: 100%;
+
+    color: white;
 }
 
 nav{
@@ -79,7 +91,55 @@ nav{
     font-weight: 600;
 }
 
-#last:hover, #last a:hover{
+#last:hover, #last:hover a{
     background-color: white;
     color: black;
+}
+
+.note{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.note p:first-child{
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: none;
+    line-height: 1.5em;
+    text-align: center;
+    /* margin-bottom: 0; */
+}
+
+.note p{
+    margin: 10px 0;
+    font-family: proxima-nova;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 68px;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.note button{
+    font-family: proxima-nova;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    color: white;
+    background-color: rgba(54, 179, 168, 1.0);
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.note button:hover{
+    background-color: rgba(54, 179, 168, .7);
 }
