@@ -238,11 +238,19 @@ main{
     background-color: #4bb34b;
     width: 100%;
 }
+#submit:hover{
+    background-color: #5bc35b;
+}
+
 
 #facebook{
     width: 100%;
     background-color: #1b6dd1;
     margin-top: 20px;
+}
+
+#facebook:hover{
+    background-color: #2b7de1;
 }
 
 #facebook_logo{
@@ -317,119 +325,3 @@ p{
     
     font-size: 12.5px;
 }
-/* body{
-    background-color: #edeef0;
-}
-header{
-    background-color: #4a76a8;
-    width: 100%;
-    position: fixed;
-    top: 0; 
-    left: 0;
-}
-header div{
-    display: flex;
-   
-    overflow: hidden;
-
-    width: 960px; 
-    height: 45px;
-    margin: 0 auto;
-    
-}
-
-header img {
-    margin-left: 15%;
-}
-header input {
-    margin-top: 0.5%;
-    margin-left: 15%;
-    width: 200px;
-    height: 50%;
-    border-radius: 25px;
-    background-image: url(images/search.svg);
-    background-repeat: no-repeat;
-    background-position: 5px;
-    background-color: #224b7a;
-    padding: 50;
-    color: white;
-}
-
-main{
-    display: flex;
-    margin: 60px auto;
-    width: 960px;
-    padding-left: 100px;
-}
-#left{
-    display: grid;
-    width: 640px;
-    text-align: center;
-    align-items: center;
-}
-#left h2{
-    margin-bottom: 10px;
-}
-.text{
-    margin-bottom: 35px;
-    
-    padding: 0 18%;
-    text-align: center;
-    font-size: 14px;
-    color: #626d7a;
-}
-.logo a{
-    display: inline-block;
-    width: 50%;
-    height: 500px;
-    background-image: url(images/reg_android_en.png);
-}    
-
-#right{
-    width: 320px;
-}
-
-
-
-hr{
-    width: 960px;
-}
-footer{
-    width: 960px;
-    display: flex;
-    margin: 0 auto;
-    color: #6f7985;
-    position: relative;
-    margin-bottom: 40px;
-    font-size: smaller;
-}
-
-footer div a{
-    padding-left: 10px;
-    text-decoration: none;
-}
-
-footer a:hover{
-    text-decoration: underline;
-}
-
-footer .left{
-    position: absolute;
-    left: 0;
-}
-
-
-footer .center{
-    position: absolute;
-    right: 50%;
-}
-
-footer .right{
-    position: absolute;
-    right: 0;
-}
-
-footer a{
-    color: #2a5885;
-
-} */
