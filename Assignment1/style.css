@@ -187,20 +187,27 @@ main{
 
 #hidden{
     cursor: pointer;
-}
-
-[data-tooltip]{
     position: relative;
-    cursor: default;
-
 }
 
-[data-tooltip]::after{
+#hidden span{
+    visibility: hidden;
+    width: 250px;
+    text-align: left;
+    padding: 5px;
     position: absolute;
-    width: 300px;
-    
+    background-color: white;
+    border: 1px solid lightblue;
+    color: black;
+    font-family: sans-serif;
+    font-size: 10px;
+    bottom: 150%;
+    left: -200%;
 }
 
+#hidden:hover span{
+    visibility: visible;
+}
 
 #birthday{
     margin-top: 5px;
