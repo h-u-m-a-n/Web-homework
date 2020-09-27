@@ -1,18 +1,40 @@
+@font-face {
+    font-family: 'Adobe Garamond Pro Adobe Regular';
+    src: url('AGaramondPro-Regular.eot');
+    src: url('AGaramondPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('AGaramondPro-Regular.woff') format('woff'),
+    url('AGaramondPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro Adobe Italic';
+    src: url('AGaramondPro-Italic.eot');
+    src: url('AGaramondPro-Italic.eot?#iefix') format('embedded-opentype'),
+    url('AGaramondPro-Italic.woff') format('woff'),
+    url('AGaramondPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 ::selection{
     color: white;
     background-color: black;
 }
 
+html{
+    scrollbar-color: #757575 #1c1c1d;
+}
 
 body{
-    border: 1px solid green;
 
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 0;
 }
 
 
@@ -54,6 +76,9 @@ nav{
 .links a{
     color: white;
     text-decoration: none;
+}
+.links #last{
+    cursor: pointer;
 }
 
 .dropdown{
@@ -116,7 +141,7 @@ nav{
 
 .note p{
     margin: 10px 0;
-    font-family: proxima-nova;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 68px;
@@ -125,9 +150,9 @@ nav{
     text-transform: uppercase;
 }
 
-.note button{
-    font-family: proxima-nova;
-    font-weight: 600;
+ button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     font-style: normal;
     font-size: 15px;
     letter-spacing: 2px;
@@ -140,6 +165,164 @@ nav{
     border-radius: 20px;
     cursor: pointer;
 }
-.note button:hover{
+button:hover{
     background-color: rgba(54, 179, 168, .7);
+}
+
+main{
+    flex: 1 0 auto;
+
+    width: auto;
+    margin: auto;
+    padding: 96px 32px 0;
+    max-width: 1000px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-family: 'Adobe Garamond Pro Adobe Regular';
+
+}
+
+
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+}  
+
+.content:first-of-type{
+    display: block;
+    margin-top: 0;
+}
+
+h1{
+    text-align: center;
+    white-space: pre-wrap;
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.2em;
+}
+
+.description{
+    margin: auto;
+    margin-top: 34px;
+    text-align: center;
+    width: 626px;
+    font-size: 18px;
+    line-height: 1.6em;
+    color: rgba(26,26,26,.7);
+}
+.description:last-of-type{
+    font-family: 'Adobe Garamond Pro Adobe Italic';
+}
+
+.description a{
+    text-decoration: none;
+    color: #26a398;
+}
+
+.content img{
+    width: 48%;
+    height: 355px;
+    margin: auto 0;
+}
+
+
+.content-text .title{
+    text-align: center;
+    font-family: proxima-nova;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    color: #bdbdbd;
+    box-shadow: .5em 0 0 rgba(255,255,255,0),-.5em 0 0 rgba(255,255,255,0);
+}
+
+.content-text{
+    margin: auto 0;
+    text-align: center;
+    font-size: 23px;
+    line-height: 35px;
+}
+.content-text button{
+    padding: 13px 32.5px;
+}
+
+.prefooter{
+    background-color: #F7F7F7;
+    padding: 66px;
+    text-align: center;
+    
+}
+
+.prefooter h2{
+    margin-bottom: 17px;
+    font-size: 30px;
+    line-height: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+.prefooter p{
+    margin: 17px 0;
+    font-family: 'Adobe Garamond Pro Adobe Regular';
+    
+}
+
+.prefooter input[type=email]{
+    margin-top: 25px;
+    padding: 15px;
+    width: 225px;
+    color: rgba(0,0,0,.3);
+    font-size: 15px;
+    border: 1px solid rgba(0,0,0,.12);
+}
+
+.prefooter input[type=button]{
+    margin-top: 25px;
+    padding: 15px 37.5px;
+    background-color: black;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.prefooter input[type=button]:hover{
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+footer{
+    padding: 64px 32px;
+    flex: 0 0 auto;    
+    background-color: #1F1F1F;
+    text-align: center;
+    
+}
+
+footer span{
+    margin-left: 14px;
+    color: rgba(255,255,255,.8);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+footer div a{
+    text-decoration: none;
+}
+
+footer p, footer p a{
+    color: rgba(255,255,255,.4);
+    font-family: 'Adobe Garamond Pro Adobe Regular';
+    font-size: 18px;
+    line-height: 1.6em;
+    margin-top: 27px;
 }
