@@ -5,12 +5,24 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: rgba(38,38,38,1);
+}
+
 img{
     max-width: 100%;
 }
 
+span{
+    font-weight: 600;
+}
+
+
 .wrapper{
-    
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
     height: 10000px;
     background-color: #FAFAFA;
     display: flex;
@@ -104,12 +116,15 @@ main{
 
 .left-side{
     max-width: 614px;
+    width: 100%;
+    flex-shrink: 1;
     display: flex;
     flex-direction: column;
     margin-right: 28px;
 }
 
 .stories{
+
     display: flex;
     position: relative;
     justify-content: flex-start;
@@ -117,6 +132,7 @@ main{
     overflow-x: auto;
     background-color: #fff;
     padding: 16px 0;
+    margin-bottom: 24px;
     border: 0.8px solid rgba(219, 219, 219, 1);
 }
 
@@ -152,6 +168,7 @@ main{
     overflow-x: scroll;
     scrollbar-width: none;
     transition: all 0.3s ease 0s;
+
 }
 
 .stories ul li{
@@ -169,7 +186,8 @@ button{
     background-color: #fff;
     border-radius: 100%;
     margin: 0 10px;
-
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
 }
 
 button>.picture{
@@ -184,4 +202,271 @@ button>.picture img{
     border-radius: 50%;
     background-color: wheat;
     border: 2px solid white;
+}
+
+.left-side>:last-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.8px solid rgba(219, 219, 219, 1);
+    border-bottom: 0;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.top-part a{
+    display: flex;
+    align-items: center;
+}
+
+.top-part a:hover{
+    text-decoration: underline;
+}
+
+.posts .picture{
+    width:32px;
+    height: 32px;
+    margin-right: 14px;
+}
+
+.top-part button{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin: 0;
+}
+
+.top-part button span{
+    position: absolute;
+    background-color: black;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    top: 9px;
+    border-radius: 100%;
+}
+
+.top-part button span::after,
+.top-part button span::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+}
+
+.top-part button span::before{
+    right: 6px;
+}
+
+.top-part button span::after{
+    right: 12px;
+}
+
+.image{
+    max-height: 768px;
+}
+
+.bottom-part{
+    flex-direction: column;
+
+    background-color: #fff;
+    border: 0.8px solid rgba(219, 219, 219, 1);
+    border-top: 0;
+    margin-top: 4px;
+}
+
+
+.bottom-part a{
+    color: rgb(142, 142, 142);
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions div{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    margin-left: 15px;
+}
+
+.actions div:last-of-type{
+    justify-content: center;
+    max-width: 35px;
+}
+
+.actions button{
+    margin:0;
+    flex: 0 0 24px;
+}
+.likes{
+    margin-bottom: 8px;
+}
+.likes .user{
+    display: flex;
+
+    margin-left: 15px;
+}
+
+
+.likes .user .picture{
+    width: 23px;
+    height: 23px;
+}
+
+.comment{
+    margin: 0 7px 0 15px;
+}
+
+.comment div{
+    margin-bottom: 4px;
+}
+
+
+.comments>div:not(.username){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.comments button{
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    border-radius: 1000%;
+}
+
+.comments button img{
+    margin-top: 5px;
+    width: 12px;    
+}
+.date{
+    margin-left: 15px;
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+
+
+
+aside{
+    position: relative;
+    height: 100%;
+    width: 293px;
+}
+
+
+.wrapper1{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 293px;
+}
+
+.wrapper1>.user{
+    display: flex;
+    align-items: center;
+    margin: 22px 0 10px
+}
+
+
+.wrapper1>.user .picture{
+    flex: 0 0 55px;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.wrapper1>.user .username{
+    margin-left: 20px;
+}
+
+.user>.username p:last-of-type{
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.recomendation .text{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(142, 142, 142);
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.all{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+}
+
+.recomendation .user{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    align-items: center;
+}
+
+
+.recomendation .user .picture{
+    flex: 0 1 32px;
+    margin-right: 12px;
+}
+
+.recomendation .user .username{
+    margin-left: -65px;
+}
+
+.recomendation .user .button{
+    color: #0095f6;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+footer{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li:not(:last-of-type)::after{
+    content:"•"; 
+    margin: 0 2.75px;
+    font-size: 5pt;
+}
+
+footer a, footer{
+    color: #c7c7c7;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+footer span{
+    text-transform: uppercase;
+    font-weight: 400;
 }
