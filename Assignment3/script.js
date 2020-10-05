@@ -87,6 +87,7 @@ for(let i = 0; i < followButs.length; i++) {
 
 let article = document.querySelector(".posts");
 
+article.after(article.cloneNode(true));
 
 let doc = document.documentElement;
 

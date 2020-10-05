@@ -560,6 +560,9 @@ footer span{
     .posts{
         margin-bottom: 15px;
     }
+    .button-left,.button-right{
+        visibility: hidden;
+    }
 }
 
 @media screen and (max-width: 640px){
