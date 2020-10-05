@@ -62,3 +62,45 @@ for(let i = 0; i < followButs.length; i++) {
         followButs[i].style.fontWeight = "600";
     });
 }
+
+//clone
+
+// let article = document.querySelector(".posts");
+
+
+// let doc = document.documentElement;
+// let pos = 0;
+// let pos1 = 25;
+// window.onscroll = function(){
+//     let clone = article.cloneNode(true);
+//     pos1 = doc.scrollTop;
+//     console.log(pos);
+    
+//     console.log("pos1="+pos1);
+//     if(pos1-pos > 1000){
+//         article.after(clone);
+//         pos = doc.scrollTop;
+        
+//     }
+    
+// }
+
+let article = document.querySelector(".posts");
+
+
+let doc = document.documentElement;
+
+window.onscroll = function(){
+    let clone = article.cloneNode(true);
+    let max = document.documentElement.scrollHeight;
+    let pos = document.documentElement.scrollTop;
+    console.log(max);
+    console.log("pos = "  + pos);
+    
+    if(max < 15000 && max - pos < 800){
+        article.after(clone);
+        pos = doc.scrollTop;
+        
+    }
+    
+}

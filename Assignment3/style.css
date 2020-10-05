@@ -23,7 +23,7 @@ span{
     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
-    height: 10000px;
+    /* height: 10000px; */
     background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
@@ -212,6 +212,7 @@ button>.picture img{
 .posts {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .top-part{
@@ -373,6 +374,49 @@ button>.picture img{
     margin-left: 15px;
     font-size: 10px;
     margin-bottom: 4px;
+}
+
+.writing{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border-top: 0.8px solid rgba(219, 219, 219, 1);
+}
+
+.writing div{
+    margin: 4px 8px 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.writing form{
+    min-height: 18px;
+    flex-basis: 18px;
+    margin: 0 ;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.writing form textarea{
+    min-height: 18px;
+    max-height: 80px;
+    word-wrap: break-word;
+    flex: 1 1 auto;
+    resize: none;
+}
+
+.writing form button{
+    color: rgb(0, 149, 246);
+    opacity: 0.5;
+    width: min-content;
+    margin: 0;
 }
 
 
