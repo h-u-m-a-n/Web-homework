@@ -229,8 +229,22 @@ button>.picture img{
     align-items: center;
 }
 
-.top-part a:hover{
+.top-part a span:hover{
     text-decoration: underline;
+}
+
+.top-part>.user>a>.username>p:last-of-type{
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.top-part>.user .picture{
+    background-image: linear-gradient(to right, red 20%, maroon 60%, maroon 80%, chocolate 80%);
+}
+
+.top-part>.user .picture img{
+    background-color: white;
+    border-radius: 50%;
 }
 
 .posts .picture{
@@ -238,6 +252,7 @@ button>.picture img{
     height: 32px;
     margin-right: 14px;
 }
+
 
 .top-part button{
     position: relative;
@@ -394,6 +409,8 @@ aside{
     margin-left: 20px;
 }
 
+
+
 .user>.username p:last-of-type{
     color: rgb(142, 142, 142);
     font-size: 12px;
@@ -421,6 +438,10 @@ aside{
     align-items: center;
 }
 
+.recomendation .username{
+    flex: 1 0 auto;
+}
+
 
 .recomendation .user .picture{
     flex: 0 1 32px;
@@ -428,7 +449,11 @@ aside{
 }
 
 .recomendation .user .username{
-    margin-left: -65px;
+    text-align: left;
+}
+
+.recomendation .user .username a:hover{
+    text-decoration: underline;
 }
 
 .recomendation .user .button{
@@ -436,6 +461,7 @@ aside{
     cursor: pointer;
     font-size: 12px;
     line-height: 14px;
+    user-select: none;
 }
 
 footer{

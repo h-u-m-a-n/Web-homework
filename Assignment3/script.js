@@ -51,3 +51,14 @@ buttonLeft.onclick = function () {
     
 };
 
+let followButs = document.getElementsByClassName("button");
+
+for(let i = 0; i < followButs.length; i++) {
+
+    followButs[i].addEventListener("click", 
+    function() {
+        followButs[i].style.color = "black";
+        followButs[i].innerHTML = "Following";
+        followButs[i].style.fontWeight = "600";
+    });
+}
