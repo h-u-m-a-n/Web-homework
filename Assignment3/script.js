@@ -97,7 +97,7 @@ window.onscroll = function(){
     console.log(max);
     console.log("pos = "  + pos);
     
-    if(max < 15000 && max - pos < 800){
+    if(max < 15000 && max - pos < 1500){
         article.after(clone);
         pos = doc.scrollTop;
         

@@ -60,7 +60,7 @@ header{
 
 .header__body>a{
     display: flex;
-    flex: 0 1 360px;
+    flex: 0 2 360px;
 }
 
 .header__logo{
@@ -69,7 +69,7 @@ header{
 }
 .header__search{
     height: 60%;
-    flex: 1 0 auto;
+    flex: 0 0 30%;
 }
 
 .header__search input{
@@ -539,4 +539,41 @@ footer a, footer{
 footer span{
     text-transform: uppercase;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1000px){
+    aside{
+        display: none;
+    }
+    main{
+        justify-content: center;
+    }
+    .left-side{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .writing{
+        display: none;
+    }
+    .posts{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .top-part, .bottom-part, .writing{
+        background-color: #FAFAFA;
+        border: 0;
+    }
+    main{
+        padding-top: 54.8px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .header__search{
+        display: none;
+    }
 }
