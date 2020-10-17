@@ -54,10 +54,13 @@ function checkWin(owner) {
         }
         if(is){
             restart(owner + " is winner");
+            return;
         }
-        else if(freeBoxes.length === 0)
-            restart('nobody won');
     }
+    if(freeBoxes.length === 0){
+        restart('nobody won');
+    }
+
 }
 
 function assignSpace(space, owner) {
@@ -76,7 +79,6 @@ function changeToX(event) {
     allX.push(boxes.indexOf(event.currentTarget));
     assignSpace(event.currentTarget, 'x');
     
-
     computerChoose0();
 }
 
