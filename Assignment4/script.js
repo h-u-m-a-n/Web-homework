@@ -55,6 +55,8 @@ function checkWin(owner) {
         if(is){
             restart(owner + " is winner");
         }
+        else if(freeBoxes.length === 0)
+            restart('nobody won');
     }
 }
 
@@ -67,8 +69,7 @@ function assignSpace(space, owner) {
     freeBoxes.splice()
     space.removeEventListener('click', changeToX);
     checkWin(owner);
-    if(freeBoxes.length === 0)
-        restart('nobody won');
+    
 }
 
 function changeToX(event) {
