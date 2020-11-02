@@ -1,13 +1,15 @@
 let x0 = null;
 const imgs = document.querySelectorAll('img');
-
+const div = document.createElement('div');
+div.classList.add('modal');
+div.classList.toggle('hidden');
 
 function pointerMove(event, i) {
     const delta = event.clientX - x0;
     console.log(delta)
     const div = document.querySelector('.modal');
     const img = document.createElement('img'); 
-    if (delta < -75 && i + 1 < imgs.length) {
+    if (delta < -50 && i + 1 < imgs.length) {
         div.innerHTML = '';
         img.src = imgs[++i].src;
         img.classList.add('toLeft');
@@ -33,7 +35,7 @@ function pointerMove(event, i) {
             pointerMove(event, i);
         });
     }
-    else if (delta > 75 && i - 1 >= 0) {
+    else if (delta > 50 && i - 1 >= 0) {
         div.innerHTML = '';
         img.src = imgs[--i].src;
         img.classList.add('toRight');
@@ -64,13 +66,11 @@ function pointerMove(event, i) {
 function enlarge(event, i) {
     x0=null;
     document.body.style.overflow = 'hidden';
-    const div = document.createElement('div');
     const img = document.createElement('img');
-    div.classList.add('modal');
     img.classList.add('appearance');
     img.classList.add('modal-picture');
     img.src = event.currentTarget.src;
-
+    div.classList.remove('hidden');
     div.appendChild(img);
 
     img.addEventListener('pointerdown', function(event) {
@@ -94,7 +94,8 @@ function enlarge(event, i) {
     document.body.appendChild(div);
     div.addEventListener('mousedown', function () {
         document.body.style.overflow = 'auto';
-        document.body.removeChild(div);
+        div.classList.add('hidden');
+        div.innerHTML = '';
     });
 
     document.addEventListener('keydown', function (event) {
