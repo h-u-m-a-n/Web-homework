@@ -11,6 +11,7 @@ function pointerMove(event, i) {
         div.innerHTML = '';
         img.src = imgs[++i].src;
         img.classList.add('toLeft');
+        img.classList.add('modal-picture');
         div.appendChild(img);
         img.addEventListener('pointerdown', function(event) {
             event.preventDefault();
@@ -36,6 +37,7 @@ function pointerMove(event, i) {
         div.innerHTML = '';
         img.src = imgs[--i].src;
         img.classList.add('toRight');
+        img.classList.add('modal-picture');
         div.appendChild(img);
         img.addEventListener('pointerdown', function(event) {
             event.preventDefault();
@@ -65,23 +67,10 @@ function enlarge(event, i) {
     const div = document.createElement('div');
     const img = document.createElement('img');
     div.classList.add('modal');
-    div.style.touchAction = 'none';
     img.classList.add('appearance');
-    img.style.touchAction = 'none';
+    img.classList.add('modal-picture');
     img.src = event.currentTarget.src;
-    img.style.backgroundColor = "green";
-    img.style.maxHeight = '100%';
-    img.style.maxWidth = '100%';
-    div.style.touchAction = 'none';
-    div.style.position = 'absolute';
-    div.style.top = scrollY + 'px';
-    div.style.left = '0';
-    div.style.width = '100vw';
-    div.style.height = '100vh';
-    div.style.backgroundColor = 'rgba(0,0,0, 0.91)';
-    div.style.display = 'flex';
-    div.style.justifyContent = 'center';
-    div.style.alignItems = 'center';
+
     div.appendChild(img);
 
     img.addEventListener('pointerdown', function(event) {
@@ -115,6 +104,7 @@ function enlarge(event, i) {
                 img.classList = '';
                 img.src = imgs[++i].src;
                 img.classList.add('toLeft');
+                img.classList.add('modal-picture');
                 div.appendChild(img);
 
             }
@@ -125,6 +115,7 @@ function enlarge(event, i) {
                 img.classList = '';
                 img.src = imgs[--i].src;
                 img.classList.add('toRight');
+                img.classList.add('modal-picture');
                 div.appendChild(img);
             }
         }
