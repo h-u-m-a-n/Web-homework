@@ -7,7 +7,7 @@ function pointerMove(event, i) {
     console.log(delta)
     const div = document.querySelector('.modal');
     const img = document.createElement('img'); 
-    if (delta < -50 && i + 1 < imgs.length) {
+    if (delta < -75 && i + 1 < imgs.length) {
         div.innerHTML = '';
         img.src = imgs[++i].src;
         img.classList.add('toLeft');
@@ -33,7 +33,7 @@ function pointerMove(event, i) {
             pointerMove(event, i);
         });
     }
-    else if (delta > 50 && i - 1 >= 0) {
+    else if (delta > 75 && i - 1 >= 0) {
         div.innerHTML = '';
         img.src = imgs[--i].src;
         img.classList.add('toRight');
