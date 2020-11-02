@@ -74,8 +74,8 @@ function enlarge(event, i) {
     div.style.position = 'absolute';
     div.style.top = scrollY + 'px';
     div.style.left = '0';
-    div.style.width = '100%';
-    div.style.height = '100%';
+    div.style.width = '100vw';
+    div.style.height = '100vh';
     div.style.backgroundColor = 'rgba(0,0,0, 0.91)';
     div.style.display = 'flex';
     div.style.justifyContent = 'center';
