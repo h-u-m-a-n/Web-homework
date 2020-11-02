@@ -69,7 +69,9 @@ function enlarge(event, i) {
     img.classList.add('appearance');
     img.style.touchAction = 'none';
     img.src = event.currentTarget.src;
-    img.style.backgroundColor = "#fff";
+    img.style.backgroundColor = "green";
+    img.style.maxHeight = '100%';
+    img.style.maxWidth = '100%';
     div.style.touchAction = 'none';
     div.style.position = 'absolute';
     div.style.top = scrollY + 'px';
