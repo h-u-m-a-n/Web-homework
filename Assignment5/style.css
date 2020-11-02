@@ -15,9 +15,51 @@ body{
 
 .photos > img{
     padding: 10px;
-    margin: 5px;
-    max-width: 200px;
-    max-height: 500px;
+    margin: 25px;
     border: 5px solid purple;
     background-color: #fff;
+    flex: 1 1 150px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.appearance{
+    animation: appearance 0.5s;
+}
+
+@keyframes appearance{
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toRight{
+    animation: right 0.5s;
+}
+
+.toLeft{
+    animation: left 0.5s;
+}
+
+@keyframes right{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes left{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
