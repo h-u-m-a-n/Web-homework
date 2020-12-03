@@ -30,7 +30,8 @@ function addSec() {
 }
 
 function start() {
-    timer = setInterval(addSec, 1000);
+    stop();
+    timer = setInterval(addSec, 1);
 }
 
 function stop() {
