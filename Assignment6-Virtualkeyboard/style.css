@@ -1,0 +1,41 @@
+*{
+    font-size: 10px;
+}
+.keyboard{
+    width: 1000px;
+}
+.row{
+    display: flex;
+}
+.row div{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row0 div{
+    height: 25px;
+}
+.row .half{
+    width: 25px;
+}
+
+.row .wide{
+    width: 75px;
+}
+
+.row .space{
+    background-color: #fff;
+}
+
+.row .veryWide{
+    width: 135px;
+}
+
+.row .spacebar{
+    width: 350px;
+}
