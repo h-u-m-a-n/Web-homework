@@ -47,6 +47,8 @@ for(let i = 0; i < rows.length; i++){
 function getIndexes(key) {
    if(key === ' ')
       key = 'SPACE';
+   else if(key === 'OS')
+      key = 'WIN';
    for(let i = 0; i < rows.length; i++){
       if(rows[i].indexOf(key) != -1)
          return [i, rows[i].indexOf(key), 0];
