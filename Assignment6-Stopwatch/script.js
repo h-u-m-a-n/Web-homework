@@ -31,11 +31,14 @@ function addSec() {
 
 function start() {
     stop();
-    timer = setInterval(addSec, 1);
+    timer = setInterval(addSec, 1000);
+    stopBt.classList.remove('hidden');
 }
 
 function stop() {
     clearInterval(timer);
+    stopBt.classList.add('hidden');
+
 }
 
 function reset() {
@@ -48,3 +51,5 @@ function reset() {
 startBt.addEventListener('click', start);
 stopBt.addEventListener('click', stop);
 resetBt.addEventListener('click', reset);
+
+
