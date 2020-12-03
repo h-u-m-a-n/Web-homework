@@ -1,0 +1,31 @@
+body{
+    height: 600px;
+    background-color: #fcf8ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.card{
+    padding: 50px 75px;
+    background-color: #79a3b1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    user-select: none;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #456268;
+    border: 0;
+}
+
+button:hover{
+    cursor: pointer;
+}

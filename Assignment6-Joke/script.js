@@ -40,3 +40,23 @@ getJoke();
 button.addEventListener('click', getJoke);
 
 icon.addEventListener('click', upVote);
+
+
+
+
+// window.onscroll = function(){
+//     let clone = article.cloneNode(true);
+//     let max = document.documentElement.scrollHeight;
+//     let pos = document.documentElement.scrollTop;
+//     console.log(max);
+//     console.log("pos = "  + pos);
+    
+//     if(max < 15000 && max - pos < 1500){
+//         article.after(clone);
+//         pos = doc.scrollTop;
+        
+//     }
+    
+// }
+
+// window.onbeforeunload = function () { window.scrollTo(0,0); };
