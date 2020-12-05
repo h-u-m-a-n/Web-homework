@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     justify-content: center;
@@ -71,4 +73,25 @@ body{
 
 input[type=number]{
     width: 50px;
+    background-color: rgb(65, 0, 153);
+    color: white;
+    border: 0;
+    -moz-appearance: textfield;
+}
+
+#generate{
+    background-color: rgb(65, 0, 153);
+    border: 0;
+    color:white;
+    width: max-content;
+    margin: 0 auto;
+    height: 40px;
+    padding: 10px;
+}
+
+#generate:hover{
+    background-color: rgb(75, 10, 173);
+}
+#generate:active{
+    padding-bottom: 15px;
 }

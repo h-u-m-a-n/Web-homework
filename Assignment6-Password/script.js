@@ -28,6 +28,9 @@ function isLowercaseLetter(num) {
 }
 
 bt.addEventListener('click', function(event) {
+    const length = document.querySelector('input[type=number]').value;
+    if(length<=0)
+        return;
     const all = [];
     const checkboxes = document.querySelectorAll('input[type=checkbox]')
 
@@ -44,7 +47,6 @@ bt.addEventListener('click', function(event) {
 
     if(all.length ===0)
         return;
-    const length = document.querySelector('input[type=number]').value;
     let res = '';
     for(let i = 0; i < length; i++){
         let num = Math.floor(Math.random()*(127-33))+33;
