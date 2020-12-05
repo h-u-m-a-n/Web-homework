@@ -1,0 +1,74 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(108, 13, 196);
+    color: antiquewhite;
+    padding: 15px;
+    width: 300px;
+}
+.card h2{
+    text-align: center;
+
+}
+
+.card .result{
+    background-color: rgb(65, 0, 153);
+    position: relative;
+}
+
+.result input[type=text]{
+    width: 92%;
+    height: 30px;
+    background-color: rgb(65, 0, 153);
+    color: white;
+    border: 0;
+}
+
+.result input[type=text]::selection{
+    color: inherit;
+    background-color: inherit;
+}
+
+.overlap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.result input[type=button]{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    height: 90%;
+    border: 0;
+    width: 10%;
+    background:rgb(255, 255, 255) url(copy.svg) 0 0/100% 100% no-repeat;
+}
+
+.result input[type=button]:hover{
+    opacity: 0.5;
+}
+
+.result input[type=button]:active{
+    transform: translateY(-1px);
+}
+
+.card .options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+input[type=number]{
+    width: 50px;
+}
