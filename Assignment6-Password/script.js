@@ -45,8 +45,10 @@ bt.addEventListener('click', function(event) {
     if(checkboxes[3].checked)
         all.push(isLowercaseLetter);
 
-    if(all.length ===0)
+    if(all.length ===0){
+        alert("Please select at least one option");
         return;
+    }
     let res = '';
     for(let i = 0; i < length; i++){
         let num = Math.floor(Math.random()*(127-33))+33;
@@ -68,5 +70,6 @@ copyBt.addEventListener('click', function(){
     password.select();
     password.setSelectionRange(0, 99999);
     document.execCommand("copy");
+    bt.focus();
     alert("Copied the text: " + password.value);
 });
